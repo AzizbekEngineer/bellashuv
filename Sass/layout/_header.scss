@@ -93,6 +93,12 @@
     }
 }
 
+.show__header__shrink {
+    padding: 0;
+    box-shadow: 0px 0px 10px black;
+    background: white;
+}
+
 @media (max-width:1000px) {
     .header {
         &__form {

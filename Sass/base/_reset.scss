@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -26,6 +27,25 @@ button {
 .df {
     display: flex;
     align-items: center;
+}
+
+.back-top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    bottom: 20px;
+    right: 20px;
+    background: #1C3554;
+    border-radius: 50%;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.show__back-top {
+    display: flex;
 }
 
 .dropdown {

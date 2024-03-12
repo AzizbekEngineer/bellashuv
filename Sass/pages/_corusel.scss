@@ -1,0 +1,83 @@
+.corusel {
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.09);
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__left,
+    &__right {
+        width: calc(50% - 30px);
+    }
+
+    &__subtitle {
+        padding-bottom: 30px;
+        font-size: 32px;
+        line-height: 35px;
+        color: #1C3554;
+        font-weight: 500;
+    }
+
+    &__title {
+        padding-bottom: 30px;
+        font-size: 28px;
+        line-height: 30px;
+        color: #1C3554;
+        font-weight: 500;
+    }
+
+}
+
+@media (max-width: 1160px) {
+    .corusel {
+        &__subtitle {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .corusel {
+        padding: 40px 0;
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__left,
+        &__right {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .corusel {
+        &__subtitle {
+            padding-bottom: 15px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &__title {
+            padding-bottom: 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+}

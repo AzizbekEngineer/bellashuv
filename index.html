@@ -5,13 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>shablon</title>
+    <title>Kompany</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- courusel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="back-top">
+        <a href="#hero">
+            <i class="fa-solid fa-arrow-up-long"></i>
+        </a>
+    </div>
     <header class="header">
         <nav class="header__navbar container df">
             <div class="header__logo">
@@ -30,10 +43,11 @@
                                     class="fa-solid fa-chevron-up"></i></span>
                         </p>
                         <ul class="dropdown__list">
-                            <li class="dropdown__list__item"><a href="">Courses</a></li>
-                            <li class="dropdown__list__item"><a href="">Categories</a></li>
-                            <li class="dropdown__list__item"><a href="">Mentor</a></li>
-                            <li class="dropdown__list__item"><a href="">Company</a></li>
+                            <li class="dropdown__list__item"><a href="#courses">Courses</a></li>
+                            <li class="dropdown__list__item"><a href="#cotigories">Categories</a></li>
+                            <li class="dropdown__list__item"><a href="#mentor">Mentor</a></li>
+                            <li class="dropdown__list__item"><a href="#corusel">Carucel</a></li>
+                            <li class="dropdown__list__item"><a href="#blog">Blog</a></li>
                         </ul>
 
                     </div>
@@ -59,7 +73,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container hero__container">
                 <div class="hero__left">
                     <h1 class="hero__title">Find the Best Courses and Amazing Mentor</h1>
@@ -201,15 +215,962 @@
                                     <h3 class="courses__price__title">$384</h3>
                                 </div>
                             </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/bussines.webp" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/bussines.webp" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/bussines.webp" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/bussines.webp" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ap-tab-container ">
+                    <div class="ap-tab-content ">
+                        <div class="courses__cards">
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/busines1.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/busines1.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/busines1.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/busines1.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/busines1.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/busines1.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/busines1.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/busines1.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ap-tab-container ">
+                    <div class="ap-tab-content ">
+                        <div class="courses__cards">
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/disaner.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/disaner.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/disaner.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/disaner.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/disaner.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/disaner.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/disaner.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/disaner.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ap-tab-container ">
+                    <div class="ap-tab-content ">
+                        <div class="courses__cards">
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/devolop.png" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/devolop.png" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/devolop.png" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/devolop.png" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/devolop.png" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/devolop.png" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/devolop.png" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/devolop.png" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ap-tab-container ">
+                    <div class="ap-tab-content ">
+                        <div class="courses__cards">
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/mark.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/mark.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/mark.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/mark.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/mark.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/mark.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/mark.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                            <div class="courses__card">
+                                <div class="courses__img"><img src="./images/mark.jpg" alt=""></div>
+                                <button class="courses__btn">UI/UX Design</button>
+                                <h3 class="courses__subtitle">Interpersonal skills - work better with others!</h3>
+                                <h4 class="courses__info">Tanah Air Team</h4>
+                                <div class="courses__stars">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <img src="./images/star.svg" alt="">
+                                    <span>(2078)</span>
+                                </div>
+                                <div class="courses__price">
+                                    <p>$640</p>
+                                    <h3 class="courses__price__title">$384</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cotigories" id="cotigories">
+            <div class="container">
+                <h1 class="cotigories__title">Top Categories</h1>
+                <div class="cotigories__cards">
+                    <div class="cotigories__card">
+                        <h3 class="cotigories__subtitle">Art & Design</h3>
+                    </div>
+                    <div class="cotigories__card">
+                        <h3 class="cotigories__subtitle">Business</h3>
+                    </div>
+                    <div class="cotigories__card">
+                        <h3 class="cotigories__subtitle">Copy Writing</h3>
+                    </div>
+                    <div class="cotigories__card">
+                        <h3 class="cotigories__subtitle">Marketing</h3>
+                    </div>
+                    <div class="cotigories__card">
+                        <h3 class="cotigories__subtitle">Programming</h3>
+                    </div>
+                    <div class="cotigories__card">
+                        <h3 class="cotigories__subtitle">Photography</h3>
+                    </div>
+                    <div class="cotigories__card">
+                        <h3 class="cotigories__subtitle">Videography</h3>
+                    </div>
+                    <div class="cotigories__card">
+                        <h3 class="cotigories__subtitle">Personal Development</h3>
+                    </div>
+                </div>
+                <div class="cotigories__items">
+                    <div class="cotigories__item">
+                        <div class="cotigories__item__img"><img src="./images/course.png" alt=""></div>
+                        <h3 class="cotigories__item__title">10.000+</h3>
+                        <p class="cotigories__item__desc">Courses</p>
+                    </div>
+                    <div class="cotigories__item">
+                        <div class="cotigories__item__img"><img src="./images/student.png" alt=""></div>
+                        <h3 class="cotigories__item__title">50.000+</h3>
+                        <p class="cotigories__item__desc">Active Students</p>
+                    </div>
+                    <div class="cotigories__item">
+                        <div class="cotigories__item__img"><img src="./images/mentor.png" alt=""></div>
+                        <h3 class="cotigories__item__title">1000+</h3>
+                        <p class="cotigories__item__desc">Active Mentor</p>
+                    </div>
+                    <div class="cotigories__item">
+                        <div class="cotigories__item__img"><img src="./images/flag.png" alt=""></div>
+                        <h3 class="cotigories__item__title">180</h3>
+                        <p class="cotigories__item__desc">Countries</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mentor" id="mentor">
+            <div class="container mentor__container">
+                <div class="mentor__left">
+                    <img src="./images/mentor__img.jpeg" alt="">
+                </div>
+                <div class="mentor__right">
+                    <h2 class="mentor__title">Become an Mentor</h2>
+                    <p class="mentor__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero.
+                        Nam scelerisque
+                        vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id
+                        proin elit placerat. Lectus
+                        morbi amet et aliquam magna mauris.
+                    </p>
+                    <p class="mentor__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero.
+                        Nam scelerisque
+                        vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id
+                        proin elit placerat. Lectus
+                        morbi amet et aliquam magna mauris.
+                    </p>
+                    <button class="mentor__btn">
+                        Start Teaching
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="corusel" id="corusel">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item corusel__cards">
+                        <div class="corusel__left">
+                            <img src="./images/nature.avif" alt="">
+                        </div>
+                        <div class="corusel__right">
+                            <h3 class="corusel__subtitle">After studying here I gained new knowledge and insights. The
+                                mentor was very friendly
+                                and guided me to get the knowledge
+                                I wanted. Thank you!</h3>
+                            <h2 class="corusel__title">KecekArif</h2>
+                            <p class="corusel__desc">Yang punya Surabaya nanti kapan - kapan tapi</p>
+                        </div>
+                    </div>
+                    <div class="item corusel__cards">
+                        <div class="corusel__left">
+                            <img src="./images/nature2.jpg" alt="">
+                        </div>
+                        <div class="corusel__right">
+                            <h3 class="corusel__subtitle">After studying here I gained new knowledge and insights. The
+                                mentor was very friendly
+                                and guided me to get the knowledge
+                                I wanted. Thank you!</h3>
+                            <h2 class="corusel__title">KecekArif</h2>
+                            <p class="corusel__desc">Yang punya Surabaya nanti kapan - kapan tapi</p>
+                        </div>
+                    </div>
+                    <div class="item corusel__cards">
+                        <div class="corusel__left">
+                            <img src="./images/nature3.jpg" alt="">
+                        </div>
+                        <div class="corusel__right">
+                            <h3 class="corusel__subtitle">After studying here I gained new knowledge and insights. The
+                                mentor was very friendly
+                                and guided me to get the knowledge
+                                I wanted. Thank you!</h3>
+                            <h2 class="corusel__title">KecekArif</h2>
+                            <p class="corusel__desc">Yang punya Surabaya nanti kapan - kapan tapi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="company" id="company">
+            <div class="container">
+                <div class="company__cards">
+                    <div class="company__card">
+                        <img src="./images/company1.png" alt="">
+                    </div>
+                    <div class="company__card">
+                        <img src="./images/company2.png" alt="">
+                    </div>
+                    <div class="company__card">
+                        <img src="./images/company3.png" alt="">
+                    </div>
+                    <div class="company__card">
+                        <img src="./images/company1.png" alt="">
+                    </div>
+                    <div class="company__card">
+                        <img src="./images/company3.png" alt="">
+                    </div>
+                    <div class="company__card">
+                        <img src="./images/company5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog" id="blog">
+            <div class="container">
+                <h1 class="blog__title">The Latest Blog</h1>
+                <div class="blog__cards">
+                    <div class="blog__card">
+                        <div class="blog__card__img">
+                            <img src="./images/disgn.avif" alt="">
+                        </div>
+                        <div class="blog__infos">
+                            <div class="blog__date">
+                                <span>3, Mei 2021</span>
+                                <span>3 min read</span>
+                            </div>
+                            <h2 class="blog__subtitle">10 graphic design trends to get you inspired in 2021</h2>
+                            <p class="blog__desc">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+                                eiusmod.</p>
+                            <span class="learnMore"><a href="#">Read More</a></span>
+                        </div>
+                    </div>
+                    <div class="blog__card">
+                        <div class="blog__card__img">
+                            <img src="./images/disgn.avif" alt="">
+                        </div>
+                        <div class="blog__infos">
+                            <div class="blog__date">
+                                <span>3, Mei 2021</span>
+                                <span>3 min read</span>
+                            </div>
+                            <h2 class="blog__subtitle">10 graphic design trends to get you inspired in 2021</h2>
+                            <p class="blog__desc">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+                                eiusmod.</p>
+                            <span class="learnMore"><a href="#">Read More</a></span>
+                        </div>
+                    </div>
+                    <div class="blog__card">
+                        <div class="blog__card__img">
+                            <img src="./images/disgn.avif" alt="">
+                        </div>
+                        <div class="blog__infos">
+                            <div class="blog__date">
+                                <span>3, Mei 2021</span>
+                                <span>3 min read</span>
+                            </div>
+                            <h2 class="blog__subtitle">10 graphic design trends to get you inspired in 2021</h2>
+                            <p class="blog__desc">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+                                eiusmod.</p>
+                            <span class="learnMore"><a href="#">Read More</a></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top__left">
+                    <div class="footer__logo"><img src="./images/footer-logo.png" alt=""></div>
+                    <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique
+                        placerat eleifend aliquam
+                        pellentesque facilisis
+                        ultrices. Imperdiet mus urna egestas at tellus.</p>
+                </div>
+                <div class="footer__top__right">
+                    <div class="footer__right__card">
+                        <p class="footer__title">About</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Courses</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Mentor</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__right__card">
+                        <p class="footer__title">Support</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Help & Support</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__right__card">
+                        <p class="footer__title">Company</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Terms of Service</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Code of Conduct</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__left">
+                    <p class="footer__bottom__desc">Privacy Policy</p>
+                    <p class="footer__bottom__desc">Terms and Condition</p>
+                </div>
+                <div class="footer__bottom__right">
+                    <p class="footer__bottom__desc">@2020 TanahAir Studio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/main.js"></script>
 
 </html>
