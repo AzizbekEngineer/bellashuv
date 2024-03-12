@@ -1,0 +1,99 @@
+.courses {
+    padding: 60px 0;
+
+    &__title {
+        font-size: 60px;
+        line-height: 75px;
+        color: $primaryCl;
+        text-align: center;
+    }
+
+    &__menu {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 8px 16px;
+        border-radius: 10px;
+        transition: .4s;
+
+        &:hover {
+            cursor: pointer;
+            background: #F72585;
+            color: white;
+        }
+
+        &:focus {
+            background: #F72585;
+            color: white;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    &__card {
+        position: relative;
+        padding: 10px;
+        transition: 0.4s;
+
+        &:hover {
+            border: 1px solid #CCCCCC;
+            box-shadow: 40px 40px 57px 0px #0000001A;
+            background: white;
+        }
+    }
+
+    &__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__btn {
+        position: absolute;
+        transform: translate(30%, -60%);
+        @include btnBlue()
+    }
+
+    &__subtitle {
+        padding: 20px 0 10px;
+        font-size: 20px;
+        color: $primaryCl;
+    }
+
+    &__info {
+        color: red;
+    }
+
+    &__stars {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__price {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        p {
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: $primaryCl;
+        }
+    }
+}

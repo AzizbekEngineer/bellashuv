@@ -1,0 +1,245 @@
+.hero {
+    padding: 0 60px;
+    margin: 40px 50px;
+    background: url(../images/hero.svg) no-repeat center;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        gap: 90px;
+    }
+
+    &__left {
+        width: 50%;
+        padding: 80px 0;
+    }
+
+    &__title {
+        max-width: 610px;
+        padding: 50px 0 20px;
+        font-size: 64px;
+        line-height: 88px;
+        font-weight: 700;
+        color: $secondaryCl;
+    }
+
+    &__desc {
+        max-width: 650px;
+        padding: 0 0 60px;
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+        color: $secondaryCl;
+    }
+
+    &__search {
+        max-width: 540px;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 16px;
+        background: $secondaryCl;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    &__inputs {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        color: $primaryCl;
+    }
+
+    &__btn {
+        @include btnRed()
+    }
+
+    &__form__input {
+        width: 80%;
+        font-size: 16px;
+        padding: 8px 16px;
+        outline: none;
+        border: none;
+    }
+
+    &__infos {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        width: calc(33.3% - 6.6px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 16px;
+        color: $secondaryCl;
+    }
+
+    &__right {
+        position: relative;
+        bottom: 0;
+        top: 140px;
+        width: 45%;
+        height: 600px;
+        right: 30px;
+        background: #E6E6E6;
+        border-radius: 10px 10px 8px 8px;
+    }
+
+    &__top__left {
+        position: absolute;
+        top: 47px;
+        left: 71px;
+    }
+
+    &__middle__left {
+        position: absolute;
+        top: 375px;
+        left: 47px;
+    }
+
+    &__midle__right {
+        position: absolute;
+        top: 290px;
+        right: 0;
+    }
+
+    &__cursor {
+        position: absolute;
+        bottom: 48px;
+        right: 30px;
+        width: 185px;
+        padding: 15px;
+        background: white;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    &__price {
+        font-size: 20px;
+        font-weight: 600;
+        color: $primaryCl;
+    }
+
+    &__subtitle {
+        padding: 10px 0;
+        font-size: 16;
+        color: $primaryCl;
+    }
+
+}
+
+@media(max-width:1290px) {
+    .hero {
+        margin: 0;
+        padding: 0;
+
+        &__title {
+            font-size: 50px;
+            line-height: 55px;
+        }
+
+        &__right {
+            top: 70px;
+        }
+    }
+}
+
+@media(max-width:1224px) {
+    .hero {
+        margin: 0;
+        padding: 0;
+
+        &__title {
+            font-size: 45px;
+            line-height: 55px;
+        }
+
+        &__infos {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__info {
+            padding-top: 15px;
+            width: calc(50% - 5px);
+        }
+    }
+}
+
+@media(max-width:980px) {
+    .hero {
+
+        &__container {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 0px;
+        }
+
+        &__left,
+        &__right {
+            width: 100%;
+            right: 0;
+        }
+
+        &__info {
+            padding-top: 15px;
+            width: calc(33.3% - 6.6px);
+        }
+    }
+}
+
+@media(max-width:585px) {
+    .hero {
+        &__title {
+            width: 100%;
+            font-size: 36px;
+            line-height: 40px;
+        }
+
+        &__infos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:355px) {
+    .hero {
+        &__title {
+            width: 100%;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__middle__left {
+            position: absolute;
+            top: 300px;
+            left: 20px;
+        }
+
+        &__cursor {
+            width: 170px;
+        }
+
+        &__price {
+            font-size: 18px;
+        }
+
+        &__subtitle {
+            padding: 5px 0;
+            font-size: 14px;
+            color: $primaryCl;
+        }
+
+    }
+}
